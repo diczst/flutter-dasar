@@ -6,17 +6,7 @@ main() {
 
 class MyApp extends StatelessWidget {
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Column"),
-        ),
-
-        body: ListView(
-          children: [
+  List<Container> myList = [
             Container(
               width: 200,
               height: 100,
@@ -47,7 +37,19 @@ class MyApp extends StatelessWidget {
               height: 100,
               color: Colors.teal,
             )
-          ],
+          ];
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Column"),
+        ),
+
+        body: ListView(
+          children: myList
         ),
       ),
     );
