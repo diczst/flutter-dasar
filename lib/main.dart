@@ -5,39 +5,38 @@ main() {
 }
 
 class MyApp extends StatelessWidget {
-
-  List<Container> myList = [
-            Container(
-              width: 200,
-              height: 100,
-              color: Colors.green,
-            ),
-            Container(
-              width: 50,
-              height: 100,
-              color: Colors.red,
-            ),
-            Container(
-              width: 250,
-              height: 100,
-              color: Colors.yellow,
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.black,
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.orange,
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.teal,
-            )
-          ];
+  List<Widget> myList = [
+    Container(
+      width: 200,
+      height: 100,
+      color: Colors.green,
+    ),
+    Container(
+      width: 50,
+      height: 100,
+      color: Colors.red,
+    ),
+    Container(
+      width: 250,
+      height: 100,
+      color: Colors.yellow,
+    ),
+    Container(
+      width: 100,
+      height: 100,
+      color: Colors.black,
+    ),
+    Container(
+      width: 100,
+      height: 100,
+      color: Colors.orange,
+    ),
+    Container(
+      width: 100,
+      height: 100,
+      color: Colors.teal,
+    )
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -47,9 +46,13 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Column"),
         ),
-
-        body: ListView(
-          children: myList
+        body: ListView.builder(
+          itemCount: 4,
+          itemBuilder: (context, index) => Container(
+              width: 100,
+              height: 100,
+              color: Colors.teal,
+            ),
         ),
       ),
     );
