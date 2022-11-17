@@ -16,11 +16,7 @@ class MyApp extends StatelessWidget {
           title: Text("Column"),
         ),
         body: ListView.separated(
-          separatorBuilder: (context, index) {
-            return Container(
-              height: 10,
-            );
-          },
+          separatorBuilder: (context, index) => Divider(),
           itemCount: 4,
           itemBuilder: (context, index) => Container(
             width: 100,
