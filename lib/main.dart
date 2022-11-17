@@ -15,7 +15,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Column"),
         ),
-        body: ListView.builder(
+        body: ListView.separated(
+          separatorBuilder: (context, index) {
+            return Container(
+              height: 10,
+            );
+          },
           itemCount: 4,
           itemBuilder: (context, index) => Container(
             width: 100,
