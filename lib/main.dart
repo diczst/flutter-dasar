@@ -5,26 +5,47 @@ main() {
 }
 
 class MyApp extends StatelessWidget {
-  List<Color> colors = [Colors.red, Colors.black, Colors.teal, Colors.cyan];
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Column"),
-        ),
-        body: ListView.separated(
-          separatorBuilder: (context, index) => Divider(),
-          itemCount: 4,
-          itemBuilder: (context, index) => Container(
-            width: 100,
-            height: 100,
-            color: colors[index],
+          appBar: AppBar(
+            title: Text("List Tile"),
           ),
-        ),
-      ),
+
+          body: ListView(
+            children: [
+              ListTile(
+                contentPadding: EdgeInsets.all(10),
+                title: Text('Dicky Pratama'),
+                subtitle: Text('Mahasiswa kece badai, always semail'),
+                leading: CircleAvatar(),
+                trailing: Text('10:00 PM'),
+              ),
+              Divider(),
+              ListTile(
+                contentPadding: EdgeInsets.symmetric(vertical:10),
+                title: Text('Senku Ishigami'),
+                subtitle: Text('Mahasiswa kece badai, ingin mengembalikan peradaban manusia yang hancur menjadi batu',
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,),
+                leading: CircleAvatar(),
+                trailing: Text('10:00 PM'),
+              ),
+              Divider(),
+              ListTile(
+                contentPadding: EdgeInsets.only(top:10),
+                title: Text('Thorfinn Karlsefni'),
+                subtitle: Text('Mahasiswa yang ingin mencari tempat baru untuk membangun peradaban yang bebas dari perang',
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,),
+                leading: CircleAvatar(),
+                trailing: Text('10:00 PM'),
+              ),
+              Divider()
+            ],
+          ),
+      )
     );
   }
 }
