@@ -1,13 +1,22 @@
 # Belajar Flutter Dasar
-## List View
-- Saat menggunakan column terdapat kemungkinan ada widget yang tidak tampil karena keterbatasan layar. Column tidak dapat discroll ke bawah oleh karena itu kita memerlukan list view agar bisa melihat lebih banyak data dengan melakukan scroll.
+## Image Widget
+Format yang support
+- JPEG
+- PNG
+- GIF
+- WEBP
+- BMP
+- WBMP
 
-- Secara otomatis lebar widget yang ada didalamnya akan menyesuaikan dengan panjang list view (match parent)
+Jenis provider image
+- Asset : dari aplikasi
+- Network : dari internet
+- File : dari memory internal / external
+- Memory : raw data
 
-- Secara default orientasi scroll dari list view adalah vertikal untuk merubah orientasi scroll dapat menggunakan
-```
-scrollDirection: Axis.horizontal,
-```
+Image harus terdaftar pada pubspec.yaml
+
+
 
 ## Referensi
 https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu
