@@ -5,17 +5,13 @@ main() {
 }
 
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('My App'),
-        ),
-
-        body: Center(child: Text('Hello World')),
-      )
+      ),
     );
   }
 }

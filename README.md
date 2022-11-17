@@ -1,5 +1,19 @@
 # Belajar Flutter Dasar
-## Widget Dasar
+## Lihat judul materi dari commit aja
+
+Catatan : 
+tambahkan const pada MaterialApp sebagai berikut:
+```
+@override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+      ),
+    );
+  }
+```
+Jika dirasa notifikasi `Prefer const with constant constructors` menganggu
 
 ## Referensi
 https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu
