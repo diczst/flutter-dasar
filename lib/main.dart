@@ -18,10 +18,7 @@ class MyApp extends StatelessWidget {
             width: 350,
             height: 500,
             color: Colors.amber,
-            child: Image(
-              fit: BoxFit.cover,
-              image: AssetImage("images/mjdwjd.jpg")
-            )
+            child: Image.asset('images/mjdwjd.jpg')
           ),
         )
 
