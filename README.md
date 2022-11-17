@@ -1,7 +1,24 @@
 # Belajar Flutter Dasar
-## Lihat judul materi dari commit aja
+## Visible and Invisible Widget
+Contoh visible widget
+- Text
 
-Hilangkan const pada 
+Contoh Invisible widget
+- Column
+- Center
+
+Contoh widget yang bisa visible dan invisible
+- Container
+
+MainAxisAlignment : Suatu layout terletak pada posisi tertentu di dalam layout induk
+
+CrossAxisAlignment : Isi-isi yang ada dalam suatu layout akan tersusun atau terletak pada posisi tertentu dalam suatu layout tersebut
+
+```
+mainAxisAlignment: MainAxisAlignment.center,
+crossAxisAlignment: CrossAxisAlignment.start,
+```
+
 
 ## Referensi
 https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu
