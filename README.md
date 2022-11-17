@@ -1,24 +1,13 @@
 # Belajar Flutter Dasar
-## Visible and Invisible Widget
-Contoh visible widget
-- Text
+## List View
+- Saat menggunakan column terdapat kemungkinan ada widget yang tidak tampil karena keterbatasan layar. Column tidak dapat discroll ke bawah oleh karena itu kita memerlukan list view agar bisa melihat lebih banyak data dengan melakukan scroll.
 
-Contoh Invisible widget
-- Column
-- Center
+- Secara otomatis lebar widget yang ada didalamnya akan menyesuaikan dengan panjang list view (match parent)
 
-Contoh widget yang bisa visible dan invisible
-- Container
-
-MainAxisAlignment : Suatu layout terletak pada posisi tertentu di dalam layout induk
-
-CrossAxisAlignment : Isi-isi yang ada dalam suatu layout akan tersusun atau terletak pada posisi tertentu dalam suatu layout tersebut
-
+- Secara default orientasi scroll dari list view adalah vertikal untuk merubah orientasi scroll dapat menggunakan
 ```
-mainAxisAlignment: MainAxisAlignment.center,
-crossAxisAlignment: CrossAxisAlignment.start,
+scrollDirection: Axis.horizontal,
 ```
-
 
 ## Referensi
 https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu

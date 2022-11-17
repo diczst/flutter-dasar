@@ -15,29 +15,37 @@ class MyApp extends StatelessWidget {
           title: Text("Column"),
         ),
 
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        body: ListView(
           children: [
             Container(
               width: 200,
-              height: 50,
+              height: 100,
               color: Colors.green,
             ),
             Container(
               width: 50,
-              height: 50,
+              height: 100,
               color: Colors.red,
             ),
             Container(
               width: 250,
-              height: 50,
+              height: 100,
               color: Colors.yellow,
             ),
             Container(
               width: 100,
-              height: 50,
+              height: 100,
               color: Colors.black,
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.orange,
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.teal,
             )
           ],
         ),
