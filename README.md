@@ -1,21 +1,15 @@
 # Belajar Flutter Dasar
-## Image Widget
-Format yang support
-- JPEG
-- PNG
-- GIF
-- WEBP
-- BMP
-- WBMP
+## Extract Widget dan Faker
+Membuat sebuah class yang dapat digunakan berulang kali (konsepnya seperti function)
+Caranya cukup mudah
+1. Klik pada class yang ingin diextract
+2. Ctrl + .
+3. Pilih extract widget
+4. Masukkan nama widget
+5. Widget siap digunakan
 
-Jenis provider image
-- Asset : dari aplikasi
-- Network : dari internet
-- File : dari memory internal / external
-- Memory : raw data
-
-Image harus terdaftar pada pubspec.yaml
-
+## Faker
+Flutter menyediakan library untuk membuat atau menggenerate sekumpulan data palsu sebagai contoh data. 
 
 
 ## Referensi
