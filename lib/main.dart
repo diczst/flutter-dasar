@@ -5,38 +5,48 @@ main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  var faker = new Faker();
-  MyApp({super.key});
+class MyApp extends StatefulWidget {
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+class _MyAppState extends State<MyApp> {
+  int counter = 1;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text('Extract Widget')),
-        body: ListView.builder(
-          itemCount: 20,
-          itemBuilder: (context, index) =>  ChatItem(
-                'https://picsum.photos/id/$index/200/300', faker.person.name(), faker.lorem.sentence()),
-        ),
+        home: Scaffold(
+      appBar: AppBar(
+        title: Text("Stateful Widget"),
       ),
-    );
-  }
-}
-
-class ChatItem extends StatelessWidget {
-  final String imageUrl;
-  final String title;
-  final String chat;
-
-  ChatItem(this.imageUrl, this.title, this.chat);
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: CircleAvatar(backgroundImage: NetworkImage(imageUrl)),
-      title: Text(title),
-      subtitle: Text(chat),
-      trailing: Text('04.00'),
-    );
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Text(
+            counter.toString(),
+            style: TextStyle(fontSize: 30),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              TextButton(
+                  onPressed: () {
+                    setState(() {
+                      counter++;
+                    });
+                  },
+                  child: Icon(Icons.add)),
+              TextButton(
+                  onPressed: () {
+                    setState(() {
+                      counter--;
+                    });
+                  },
+                  child: Icon(Icons.remove))
+            ],
+          )
+        ],
+      ),
+    ));
   }
 }

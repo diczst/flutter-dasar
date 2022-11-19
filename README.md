@@ -1,15 +1,11 @@
 # Belajar Flutter Dasar
-## Extract Widget dan Faker
-Membuat sebuah class yang dapat digunakan berulang kali (konsepnya seperti function)
-Caranya cukup mudah
-1. Klik pada class yang ingin diextract
-2. Ctrl + .
-3. Pilih extract widget
-4. Masukkan nama widget
-5. Widget siap digunakan
+## Stateful Widget
+Stateless widget tidak melakukan perubahan data secara langsung pada aplikasi. Saat menggunakan stateless, perubahan hanya dapat terjadi apabila pengguna membuka ulang aplikasi atau saat pengembang melakukan hot reload atau restart.
 
-## Faker
-Flutter menyediakan library untuk membuat atau menggenerate sekumpulan data palsu sebagai contoh data. 
+Dengan stateful, maka perubahan yang terjadi pada aplikasi dapat langsung terjadi secara langsung tanpa harus melakukan reload ataupun restart.
+
+# Mengubah stateless widget menjadi stateful
+Cukup tekan `Ctrl + .` selanjutnya pilih convert to stateful widget, maka secara otomatis widget akan terkonversi. Untuk merubah tampilan secara langsung, maka menggunakan fungsi setstate di dalam class Statefull Widget
 
 
 ## Referensi
