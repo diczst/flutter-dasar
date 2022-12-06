@@ -1,6 +1,5 @@
-import 'package:faker/faker.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
 main() {
   runApp(MyApp());
@@ -18,14 +17,22 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Date Format"),
-        ),
+        appBar: AppBar(),
         body: Center(
-          child: Text(DateFormat.yMMMMEEEEd().add_Hms().format(DateTime.now())),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: 
+            TextField(
+              autocorrect: false,
+              enableInteractiveSelection: false,
+              obscureText: true,
+              obscuringCharacter: "*",
+              keyboardType: TextInputType.number,
+              readOnly: true,
+            ),
+          ),
         ),
       ),
     );
   }
 }
-
