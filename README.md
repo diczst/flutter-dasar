@@ -1,5 +1,5 @@
 # Belajar Flutter Dasar
-## Dialog Dasar dan Menggunakan Widget external (di luar main.dart)
+## Basic Navigator (Perpindahan Halaman)
 
 ## Referensi
 https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu
