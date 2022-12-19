@@ -1,5 +1,5 @@
 # Belajar Flutter Dasar
-## Basic Navigator (Perpindahan Halaman)
+## Basic Navigation dengan Named Routes (Pindah halaman dengan routes name)
 
 ## Referensi
 https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu
