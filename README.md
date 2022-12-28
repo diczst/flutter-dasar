@@ -1,5 +1,5 @@
 # Belajar Flutter Dasar
-## Dasar Model
+## Repository Name Changed
 
 ## Referensi
 https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu
