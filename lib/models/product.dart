@@ -1,12 +1,18 @@
-import 'package:flutter/material.dart';
 
 class Product {
-  // @required berarti wajib diisi
-  @required String judul;
-  @required String imageURL;
-  @required int harga;
-  String deskripsi;
+  final String id;
+  final String title;
+  final String description;
+  final double price;
+  final String imageUrl;
+  bool isFavorite;
 
-  // constructor
-  Product(this.judul, this.imageURL, this.harga, this.deskripsi);
+  Product({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.price,
+    required this.imageUrl,
+    this.isFavorite = false,
+  });
 }

@@ -1,5 +1,6 @@
 # Belajar Flutter Dasar
-## Repository Name Changed
+## State Management Provider
+Agar tidak perlu lempar data dari file ke file dari satu file dart ke file dart yang lain.
 
 ## Referensi
 https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu
